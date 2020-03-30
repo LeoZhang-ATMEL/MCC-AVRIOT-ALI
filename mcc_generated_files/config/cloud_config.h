@@ -6,15 +6,15 @@
 // <s> project id
 // <i> Google Cloud Platform project id
 // <id> project_id
-#define CFG_PRODUCT_KEY "a11v7xKKAWn"
+#define CFG_PRODUCT_KEY "a12SBAhLjnt"
 
 
 // <s> project region
 // <i> Google Cloud Platform project region
 // <id> project_region
-#define CFG_DEVICE_NAME "AC5C"
+#define CFG_DEVICE_NAME "D804"
 
-#define CFG_DEVICE_SECRET "uzbhqsD8gRFuwX4HmUJiMShMmxclNMVu"
+#define CFG_DEVICE_SECRET "Zv4yGHpUN3fGWljc2OAndunvtRUyGg7g"
 
 #define CFG_WRITE_DEVICE_SECRET 1
 
