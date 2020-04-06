@@ -126,8 +126,8 @@ void LED_holdYellowOn(bool holdHigh)
         LED_YELLOW_SetHigh();
     }
     // Re-Use yellow_timer task
-    ledHeld = true;
-    timeout_create(&yellow_timer,LEDS_HOLD_INTERVAL);
+    //ledHeld = true;
+    //timeout_create(&yellow_timer,LEDS_HOLD_INTERVAL);
 }
 
 void LED_flashRed(void)
