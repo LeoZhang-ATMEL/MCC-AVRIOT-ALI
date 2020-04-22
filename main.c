@@ -34,6 +34,8 @@ SOFTWARE.
 #include "mcc_generated_files/cloud/cloud_service.h"
 #include "mcc_generated_files/debug_print.h"
 
+volatile uint8_t g_ledYellowStatus = 0;
+
 //This handles messages published from the MQTT server when subscribed
 void receivedFromCloud(uint8_t *topic, uint8_t *payload)
 {
@@ -69,7 +71,8 @@ void sendToCloud(void)
 	                  rawTemperature / 100,
 	                  abs(rawTemperature) % 100);
 
-   if (len >0) {
+   if (len >0 && g_ledYellowStatus != ledYellowStatus) {
+      g_ledYellowStatus = ledYellowStatus;
       CLOUD_publishData((uint8_t*)json, len);
       //LED_flashYellow();
    }
